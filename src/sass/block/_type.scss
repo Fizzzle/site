@@ -1,0 +1,23 @@
+.type{
+    padding-top: 140px;
+    &__wrapper{
+        padding-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(2, 370px);
+    }
+    &__block{
+        padding: 30px 40px 44px 43px;
+    }
+    &__name{
+        font-size: 26px;        
+    }
+    &__img{
+        margin-top: 66px;
+        object-fit: cover;
+        img{
+            width: 288px;
+            max-height: 217px;
+
+        }
+    }
+}

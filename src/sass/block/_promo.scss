@@ -1,0 +1,66 @@
+.promo{
+    padding-top: 85px;
+    &__wrapper{
+        display: flex;
+    }
+    &__block{
+        padding-top: 30px;
+    }
+    &__img{
+        transform: translateX(-140px);
+    }
+    &__title{
+        text-align: left;
+        font-size: 56px;
+        line-height: 67px;
+        white-space: nowrap;
+        span{
+            color:#45C436;
+        }
+    }
+    &__subtitle{
+        margin-top: 20px;
+        font-size: 34px;
+        line-height: 41px;
+    }
+    &__descr{
+        position: relative;
+        margin-top: 40px;
+        font-size: 18px;
+        width: 400px;
+        padding-left: 60px;
+        span{
+            color:#45C436;
+        }
+        &::after{
+            position: absolute;
+            content: '';
+            top: 3px;
+            left: 0;
+            width: 40px;
+            height: 45px;
+            background: url('/icons/enegry.png') no-repeat;
+        }
+    }
+    &__btn{
+        position: relative;
+        display: block;
+        margin-top: 66px;
+        width: 324px;
+        height: 72px;
+        padding: 17px 150px 17px 43px;
+        line-height: 20px;
+        font-size: 16px;
+        font-weight: 700;
+        &::after{
+            content: '';
+            position: absolute;
+            background: url('/icons/btnIcon.png') no-repeat;
+            top: -50px;
+            left: 160px;
+            width: 250px;
+            height: 200px;
+        }
+    }
+
+}
