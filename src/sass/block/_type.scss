@@ -1,12 +1,23 @@
 .type{
     padding-top: 140px;
+    &__title{
+        span{
+            padding: 4px 3px 12px 5px;
+            border: 1px solid $main-color;
+            border-radius: 100%;
+        }
+    }
     &__wrapper{
         padding-top: 50px;
         display: grid;
-        grid-template-columns: repeat(2, 370px);
+        justify-content: space-between;
+        grid-template-columns: repeat(3, 370px);
+        gap: 30px;
     }
     &__block{
         padding: 30px 40px 44px 43px;
+        background-color: #fff;
+        border-radius: 12px;        
     }
     &__name{
         font-size: 26px;        
@@ -20,4 +31,32 @@
 
         }
     }
-}
+    &__oldprice{
+        text-align: center;
+        margin-top: 60px;
+        font-size: 18px;
+        line-height: 22px;
+        color: #989897;
+        font-weight: 400;
+    }
+    &__price{
+        text-align: center;
+        font-size: 24px;
+        line-height: 28px;
+        color: $main-color;
+        font-weight: 400;
+        span{
+            font-weight: 700;
+        }        
+    }
+    &__btn{
+        display: block;
+        margin: 26px auto 0 auto;
+        color:#fff;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        padding: 22px 68px;
+        text-align: center;
+    }
+};
