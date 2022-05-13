@@ -1,0 +1,59 @@
+.project{
+    padding-top: 120px;
+    padding-bottom: 120px;
+    &__title{        
+        width: 705px;
+        margin: 0 auto;
+        span{
+            padding: 4px 3px 12px 5px;
+            border: 1px solid #3caa2f;
+            border-radius: 100%;
+        }
+    }
+    &__subtitle{
+        display: flex;
+        align-items: center;
+        margin: 20px 0 45px 0;
+    }
+    &__text{
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        text-align: center;
+        margin-right: 40px;
+    }
+    &__wrapper{
+        display: grid;
+        grid-template-columns: repeat(3, 390px);
+        grid-template-rows: repeat(4, 390px);
+    }
+    &__img{
+        overflow: hidden;
+        object-fit: cover;
+        img{
+            transition: all .3s;
+        }
+        &:hover{
+            img{
+                transform: scale(1.05);
+            }
+        }
+    }
+    &__btn{
+        padding: 16px 28px;
+        margin-right: 20px;
+        &-bottom{
+            display: block;
+            margin: 65px auto 0 auto;
+            width: 227px;
+            min-height: 72px;
+            padding: 26px 55px;
+            background: $gradient;
+        }
+        &-active{
+            color: #D5D5D5;
+            background-color: #F7F7F7;
+            border: 1px solid #D5D5D5;
+        }
+    }
+}
