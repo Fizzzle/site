@@ -1,0 +1,55 @@
+.about{
+    padding-top: 140px;
+    &__wrapper{
+        display: grid;
+        grid-template-columns: 347px 770px;
+    }
+    &__block{
+        padding-top: 10px;
+    }
+    &__title{
+        span{
+            border: 1px solid $main-color;
+            border-radius: 100%;
+            padding: 8px;
+        }
+    }
+    &__subtitle{
+        text-align: center;
+        padding-top: 23px;        
+        font-size: 34px;
+        line-height: 41px;
+    }
+    &__items{
+        padding-top: 43px;
+        display: grid;
+        grid-template-columns: repeat(2, 370px);
+        gap: 30px;
+    }
+    &__item{
+        padding: 42px 105px 41px 43px;
+        background-color: #fff;        
+        border: 2px solid $main-color;
+        border-radius: 9px;        
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 120%;
+        &:nth-child(1){
+            padding-top: 53px;
+            background: url('/icons/aboutIcon/clock.png') no-repeat right bottom;
+            background-color: #fff;       
+        }
+        &:nth-child(2){
+            background: url('/icons/aboutIcon/rocket.png') no-repeat right bottom;
+            background-color: #fff;       
+        }
+        &:nth-child(3){
+            background: url('/icons/aboutIcon/money.png') no-repeat 90%;
+            background-color: #fff;       
+        }
+        &:nth-child(4){
+            background: url('/icons/aboutIcon/darts.png') no-repeat right bottom;
+            background-color: #fff;       
+        }
+    }
+}

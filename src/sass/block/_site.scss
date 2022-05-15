@@ -1,0 +1,54 @@
+.site{
+    padding: 200px 0 233px;
+    background:url('/img/bg/book.png') no-repeat right bottom;
+    &__title{
+        text-align: left;
+        span{
+            color: #45C436;
+        }
+    }
+}
+
+.form{        
+    display: flex;
+    flex-direction: column;
+    margin-top: 95px;
+    border-radius: 9px;
+    padding: 60px 43px;
+    width: 441px;
+    height: 530px;
+    background-color: #fff;
+
+    &__name{
+        font-size: 34px;
+        white-space: nowrap;
+        text-align: center;
+    }
+    &__subname{
+        text-align: center;
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 30px;
+    }
+    
+    input{
+        margin-top: 7px;
+        padding: 25px 53px;
+        background: #F2F2F2;
+        border: 1px solid #E7E7E7;
+        border-radius: 61px;
+    }
+    &__trigger{
+        display: flex;
+        align-items: center;
+        color: #000;        
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        margin-top: 10px;
+        input{
+            display: block;
+            margin: 0 auto;      
+        }
+    }
+}

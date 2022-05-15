@@ -1,0 +1,62 @@
+.ordering{
+    margin-top:200px;
+    padding-top: 50px;
+    width: 100%;
+    min-height: 311px;
+    background: url('/img/five/orange.png') no-repeat 140%;
+    background-size: 50%;
+    background-color: $main-color;
+    &__title{
+        text-align: left;
+        color: #fff;
+    }
+    &__list{
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        margin-top: 35px;
+        display: grid;
+        grid-template-columns: repeat(2, 384px);
+        gap: 22px 40px;
+    }
+    &__item{
+        position: relative;
+        padding-left: 54px;
+        color: #fff;                
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 29px;
+        &::after{
+            position: absolute;
+            content: '';
+            width: 37px;
+            height: 37px;
+            padding: 1px 11px;
+            border: 2px solid #FFDE23;
+            border-radius: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+        }
+        &:nth-child(1){
+            &::after{
+                content: '1';
+            }
+        }
+        &:nth-child(2){
+            &::after{
+                content: '2';
+            }
+        }
+        &:nth-child(3){
+            &::after{
+                content: '3';
+            }
+        }
+        &:nth-child(4){
+            &::after{
+                content: '4';
+            }
+        }
+    }
+}
